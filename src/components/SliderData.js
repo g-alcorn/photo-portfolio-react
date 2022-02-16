@@ -14,4 +14,6 @@ export const SliderData = [
   {
     image: 'https://cdn.theatlantic.com/thumbor/vDZCdxF7pRXmZIc5vpB4pFrWHKs=/559x0:2259x1700/1080x1080/media/img/mt/2017/06/shutterstock_319985324/original.jpg'
   }
-]
+];
+
+export default SliderData;
