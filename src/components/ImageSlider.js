@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
-function ImageSlider({ slides }) {
+const ImageSlider = ({ slides }) => {
   //Initialize state
   const [state, setState] = useState(0);
   const length = slides.length;
@@ -12,7 +12,7 @@ function ImageSlider({ slides }) {
     return null;
   }
 
-  //Function to control
+  // onClick functions for arrow buttons
   const nextSlide = () => {
     //Sets state to current img number - If current img is final element of array, it will reset to first element
     setState(state === length - 1 ? 0 : state + 1)
