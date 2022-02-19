@@ -1,12 +1,15 @@
 import { React } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
 const NavLink = (props) => {
-  
+  let dest = '/' + props.text;
+
   return (
     <li className="nav-item nav-drop">
-      <a href="#" className="icon-button">
+      <Link to={dest} className="icon-button">
         {props.icon} {props.text}
-      </a>
+      </Link>
+      <Outlet />
     </li>
   );
 };

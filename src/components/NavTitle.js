@@ -1,11 +1,13 @@
 import { React } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
 const NavTitle = (props) => {
   return (
     <li className="nav-title">
-      <a href="#">
+      <Link to="/">
         {props.text}
-      </a>
+      </Link>
+      <Outlet />
     </li>
   );
 };

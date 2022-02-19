@@ -4,8 +4,6 @@ import { CSSTransition } from "react-transition-group";
 const DropdownMenu = (props) => {
   const [activeMenu, setActiveMenu] = useState('main');
 
-
-
   return (
     <div className='dropdown' >
       <CSSTransition 
